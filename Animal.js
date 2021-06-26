@@ -2,6 +2,10 @@ class Animal {
   constructor(name) {
     this.name = name;
   }
+  getName() {
+    return this.name;
+  }
+
   sleep() {
     console.log(`${this.name} is sleeping`);
   }
@@ -10,7 +14,7 @@ class Animal {
   }
 }
 class ChildAnimal extends Animal {
-  constructor(name,height) {
+  constructor(name, height) {
     super(name);
     this.height = height;
   }
@@ -19,9 +23,7 @@ class ChildAnimal extends Animal {
   }
 }
 
-let child = new ChildAnimal("Jack",155);
+let child = new ChildAnimal("Jack", 155);
 child.eat();
 child.run();
 child.sleep();
-
-

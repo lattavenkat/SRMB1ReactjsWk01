@@ -101,9 +101,7 @@ let markcode = student.map((fifteenmark) => {
     mark1 = fifteenmark.marks + 15;
   } 
   else{
-   // let mark2=student.marks;
-      //return mark2;
-      return student.marks;
+     return student.marks;
   }
     console.log(`Mark: ${mark1}\nPincode: ${fifteenmark.pincode}`);
 });
