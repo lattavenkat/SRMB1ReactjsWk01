@@ -16,3 +16,4 @@ var yesterday = new Date();
 yesterday.setDate(today.getDate()-1);
 formatDate(today);
 formatDate(yesterday);
+console.log("Thanks");
